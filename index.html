@@ -13,11 +13,19 @@
   <textarea id="inputText" placeholder="Paste your text here..."></textarea>
 
   <div class="options">
+    <label for="caseOption">Case Option:</label>
+    <select id="caseOption">
+      <option value="title" selected>Capitalize Every Word</option>
+      <option value="sentence">Capitalize Only Beginning</option>
+      <option value="lower">All Lowercase</option>
+      <option value="upper">All Uppercase</option>
+    </select>
+  </div>
+  
+  <div class="options">
     <label><input type="checkbox" id="removeDoubleSpaces" checked> Remove double spaces</label>
     <label><input type="checkbox" id="combineLines" checked> Combine lines into one</label>
   </div>
-
-  <button onclick="formatText()">Format Text</button>
 
   <textarea id="resultText" placeholder="Result will appear here..." readonly></textarea>
 
