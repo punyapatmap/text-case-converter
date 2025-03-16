@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Formatter By Prab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Text Formatter</h1>
+
+  <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+
+  <div class="options">
+    <label><input type="checkbox" id="removeDoubleSpaces" checked> Remove double spaces</label>
+    <label><input type="checkbox" id="combineLines" checked> Combine lines into one</label>
+  </div>
+
+  <button onclick="formatText()">Format Text</button>
+
+  <textarea id="resultText" placeholder="Result will appear here..." readonly></textarea>
+
+  <footer>© 2025 PYPT MPrPH</footer>
+  <script src="converter-case.js"></script>
+</body>
+</html>
